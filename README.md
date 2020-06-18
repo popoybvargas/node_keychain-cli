@@ -1,14 +1,18 @@
 # zv-keychain
-Encrypt/decrypt passwords (or anything) then store/retrieve them from your local storage (via Command Line Interface).  
+Encrypt/decrypt passwords (or anything) then store/retrieve them from local storage (via Command Line Interface).  
 Makes use of node built-in **crypto** package.
 
 #### Usage
-1. Install dependency (*zv-load.env*)
+1. If installed via NPM, just *require* it from the *main* (e.g. ***app.js***) script:
+```
+require( 'zv-keychain' );
+```
+- If cloned from github, install dependency (*zv-load.env*)
 ```
 cd <PATH TO zv-keychain>
 npm install
 ```
-2. Create .env file and specify path to keychain file (or any name preferred)
+2. Create .env file and specify absolute path to keychain file (or any name preferred)
 ```
 KEYCHAIN_PATH=<PATH TO THE FILE WHCH WILL SERVE AS KEYCHAIN>
 ```

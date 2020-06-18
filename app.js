@@ -16,6 +16,13 @@ const getKeychain = () =>
 		return process.exit( 1 );
 	}
 
+	if ( ! fs.exists( process.env.KEYCHAIN_PATH ) )
+	{
+		console.log( `ERROR 💥 Your ${process.env.KEYCHAIN_PATH} keychain file does not exist!` );
+
+		return process.exit( 1 );
+	}
+
 	const keychain = fs.readFileSync( process.env.KEYCHAIN_PATH, 'utf-8' );
 	const keychainObj = keychain ? JSON.parse( keychain ) : [];
 
@@ -78,6 +85,10 @@ const decrypt = name =>
 			{
 				console.log( `ERROR 💥 <${name}> does not exist in the keychain!` );
 			}
+		}
+		else
+		{
+			console.log( '⚠️ Your keychain is empty. Start encrypting first.' );
 		}
 	}
 	catch ( err ) { console.log( err ); }
