@@ -1,6 +1,6 @@
 {
   "name": "zv-keychain",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Encrypt/decrypt passwords (or anything) then store/retrieve them from your local storage (via Command Line Interface).",
   "main": "app.js",
   "scripts": {

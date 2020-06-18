@@ -16,7 +16,7 @@ const getKeychain = () =>
 		return process.exit( 1 );
 	}
 
-	if ( ! fs.exists( process.env.KEYCHAIN_PATH ) )
+	if ( ! fs.existsSync( process.env.KEYCHAIN_PATH ) )
 	{
 		console.log( `ERROR 💥 Your ${process.env.KEYCHAIN_PATH} keychain file does not exist!` );
 
