@@ -1,0 +1,29 @@
+{
+  "name": "zv-keychain",
+  "version": "1.0.0",
+  "description": "Encrypt/decrypt passwords (or anything) then store/retrieve them from your local storage (via Command Line Interface).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popoybvargas/node_keychain-cli.git"
+  },
+  "keywords": [
+    "encrypt",
+    "decrypt",
+    "password",
+    "protect",
+    "secure"
+  ],
+  "author": "Popoy Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/popoybvargas/node_keychain-cli/issues"
+  },
+  "homepage": "https://github.com/popoybvargas/node_keychain-cli#readme",
+  "dependencies": {
+    "zv-load.env": "^2.0.4"
+  }
+}
